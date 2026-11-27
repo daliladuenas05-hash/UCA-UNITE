@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>UCA UNITE</title>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.min.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100dvh;
+      overflow: hidden;
+      background: #EFEFEF;
+      position: fixed;
+      inset: 0;
+    }
+    #phone-frame {
+      width: 100%;
+      height: 100dvh;
+      position: relative;
+      overflow: hidden;
+    }
+    #phone-frame canvas {
+      display: block;
+      touch-action: none;
+    }
+    .app-input {
+      position: fixed;
+      border: 1px solid #D5D5D5;
+      border-radius: 6px;
+      padding: 2px 6px;
+      background: #FFFFFF;
+      color: #1E1E1E;
+      outline: none;
+      z-index: 20;
+      transform-origin: top left;
+    }
+  </style>
+</head>
+<body>
+  <div id="phone-frame"></div>
+  <script src="sketch.js"></script>
+</body>
+</html>
